@@ -1,0 +1,32 @@
+<div class="pricing card mb-5 mb-lg-0">
+    <div class="card-body">
+      <h5 class="card-title text-muted text-uppercase text-center">{{myData.title}}</h5>
+      <h6 class="card-price text-center">{{myData.price}}<span class="period">/month</span></h6>
+      <hr>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{myData.lineOne}}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{myData.lineTwo}}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{myData.lineThree}}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{myData.lineFour}}</li>
+        <li><span class="fa-li"><i class="fas fa-times"></i></span>
+            <span class="text-muted" *ngIf="myData.one.mutedFive">{{myData.one.lineFive}}</span>
+            <span *ngIf="!myData.one.mutedFive">{{myData.one.lineFive}}</span>
+        </li>
+        <li><span class="fa-li"><i class="fas fa-times"></i></span>
+            <span class="text-muted" *ngIf="myData.two.mutedSix">{{myData.two.lineSix}}</span>
+            <span *ngIf="!myData.two.mutedSix">{{myData.two.lineSix}}</span>
+        </li>
+        <li><span class="fa-li"><i class="fas fa-times"></i></span>
+            <span class="text-muted" *ngIf="myData.three.mutedSeven">{{myData.three.lineSeven}}</span>
+            <span *ngIf="!myData.three.mutedSeven">{{myData.three.lineSeven}}</span>
+        </li>
+        <li><span class="fa-li"><i class="fas fa-times"></i></span>
+            <span class="text-muted" *ngIf="myData.four.mutedEight">{{myData.four.lineEight}}</span>
+            <span *ngIf="!myData.four.mutedEight">{{myData.four.lineEight}}</span>
+        </li>
+      </ul>
+      <div class="d-grid">
+        <a href="#" class="btn btn-primary text-uppercase">Button</a>
+      </div>
+    </div>
+  </div>
